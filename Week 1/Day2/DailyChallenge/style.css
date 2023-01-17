@@ -1,21 +1,25 @@
 *{box-sizing: border-box}
 
 
-body,html{ margin:0px;
+body,html{  
+    margin:0px;
     padding:0px;
-    }
+}
 
 
-.help{position:absolute;
+.help{
+    position:absolute;
     color:whitesmoke;
     font-size: 26px;
     top:0px;
-right:50px;
-text-shadow: 2px 4px 6px wheat;}
+    right:50px;
+    text-shadow: 2px 4px 6px wheat;
+}
 
-.navbar > li{display:inline-block;
-height:50px;
-margin-top: 30px;
+.navbar > li{
+    display:inline-block;
+    height:50px;
+    margin-top: 30px;
 }
 /*I need help with setting my Nav Bar at the top of the page, there is always a small space a the top*/
 .navbar{background-color: rgb(50, 69, 193,.5);
@@ -31,7 +35,7 @@ a {position:relative;
     letter-spacing: 1px;
     font-family:fantasy;
     color:orange;
-    lefT:880px;
+    left:880px;
    }
 
 
@@ -75,12 +79,12 @@ Small devices: the title is above the paragraph.
     /*small device*/
 @media all and (max-width:768px){
     .navbar{background-color: yellow;
-        color:black;}}
+        color:black;}
     
     h1 {font-size: 35px;
     position:absolute;
-    top:310px;
-right:600px;
+    top:110px;
+right:260px;
 padding:15px;
 background-color: rgb(0, 0, 0, .4);
 border-radius: 15px;
@@ -91,23 +95,47 @@ border-radius: 15px;
         right:260px;
         top:320px;
 font-size: 10px;
-background-color:rgb(0, 0, 0, .4);}
+background-color:rgb(0, 0, 0, .4);}}
 
     /*medium device*/
-
 @media all and (min-width:769px){
         h1{font-size: 25px;}
     
     .navbar{background-color: lightgreen;
-    color: black;}}
+    color: black;
+position:relative;
+}}
+
+a {position:relative;
+    left:100px;
+    padding:0px;
+    margin:5px;
+    font-size: 10px;
+    }
+
+    h1 {font-size: 35px;
+        position:absolute;
+        top:310px;
+    right:600px;
+    padding:15px;
+    background-color: rgb(0, 0, 0, .4);
+    border-radius: 15px;
+    }
+    
+        .bio{position:absolute;
+        width:300px;
+            right:260px;
+            top:320px;
+    font-size: 10px;
+    background-color:rgb(0, 0, 0, .4);}
 
     /*large device*/
-@media all and (min-width:992px){
-    .navbar{background-color: red;
-    color:white;}}
+    @media all and (min-width:992px){
+        .navbar{background-color: red;
+        color:white;}}
 
     /*extra large device*/
-@media all and (min-width:1200px;){
+@media all and (min-width:1200px){
     .navbar{background-color:black;
     color:white;}
 }
