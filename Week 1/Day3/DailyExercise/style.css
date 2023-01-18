@@ -11,6 +11,7 @@ body,html{
     justify-content: space-between;
     margin:35px;
     border:2px solid yellow;
+    margin-bottom: 0px;
 }
 
 .box1{
@@ -22,11 +23,14 @@ body,html{
 }
 
 .container2 {
+    position: absolute;
     display:flex;
     flex-direction: row;
     justify-content: space-around;
-    
-    margin:35px;
+    align-items: center;
+    width:510px;
+    margin:15px;
+    margin-left: 120px;
     border:2px solid rgb(20, 47, 186);
 }
 

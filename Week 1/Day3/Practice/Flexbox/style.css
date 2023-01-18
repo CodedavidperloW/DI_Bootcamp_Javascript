@@ -1,0 +1,45 @@
+*{box-sizing: border-box;}
+
+body{margin:0px;
+padding:0px;}
+
+.example{display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:4px;
+border:2px solid red;
+justify-content: space-between;
+align-items: center;
+padding:3px;}
+
+.one{
+    display:flex;
+    width:100%;
+    border:2px solid green;
+    padding:25px;
+background-color: lightblue;
+justify-content: center;
+align-items:center;
+}
+
+.two{
+    display:flex;
+    width:400px;
+border:2px solid orange;
+padding:25px;
+height:100px;
+align-self: center;
+justify-content: center;
+align-items:center;
+}
+
+
+.three{
+    display:flex;
+    width:100%;
+    border:2px solid blue;
+    padding:25px;
+background-color: lightblue;
+justify-content: center;
+align-items:center;
+}
