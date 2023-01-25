@@ -42,7 +42,7 @@ if(userNumber%2===0){
 //if (user===1){
 //    console.log()
 //}
-
+/*
 if (users.length === 0){
     console.log("No one is online");
 } else if (users.length === 1){
@@ -52,7 +52,22 @@ if (users.length === 0){
 }  else if (users.length > 2){
     const remainingUsers = users.length -2
     console.log(`${users[0]} and ${users[1]} and ${remainingUsers} more are online`);
-    
 }
+*/
 
+//Exercise 4
+//let usersRemaining = Number(users) -2;
+//Couldn't complete
 
+const users = ["Lea123", "Princess45", "cat&doglovers", "helooo@000", "johnho", "beastlyboy"];
+if (users === 0){
+    console.log("No one is online.")
+} else if (users === 1){
+    console.log(`${users[0]} is online`)
+} else if (users === 2){
+    console.log(`${users[0]} and ${users[1]} is online`)
+}  
+else {
+    let usersRemaining = users.length -2; 
+    console.log(`${users[0]} and ${users[1]} and ${usersRemaining} more are online`)
+}

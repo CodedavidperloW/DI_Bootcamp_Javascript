@@ -1,0 +1,32 @@
+/*section{border: 2px solid blue;
+display:grid;
+grid-template-columns: 1fr 1fr;
+/*first column takes 1 fraction of the section
+second column takes 1 fraction of the section
+grid-template-rows: 1fr 1fr;
+padding:20px;
+gap:10px;}
+
+section div {
+    border: 2px solid violet;
+    padding:3px;
+}*/
+
+section{
+    border:2px solid red;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 2fr 1fr;
+    /*the first column takes up 1fraction of the section
+    and the second column takes up 2fractions of the section
+*/}
+
+section div{
+    border: 2px solid black;
+
+}
+.first {
+    /*grid-column:Where it starts? And how many it takes*/
+    grid-column: 1 / span 2;
+    background-color: orangered;
+}

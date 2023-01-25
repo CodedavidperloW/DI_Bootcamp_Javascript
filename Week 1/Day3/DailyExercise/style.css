@@ -10,8 +10,9 @@ body,html{
     flex-direction: row;
     justify-content: space-between;
     margin:35px;
-    border:2px solid yellow;
+    border:2px solid rgb(123, 237, 224);
     margin-bottom: 0px;
+    width:600px;
 }
 
 .box1{
@@ -23,12 +24,12 @@ body,html{
 }
 
 .container2 {
-    position: absolute;
+    /*position: absolute;*/
     display:flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    width:510px;
+    width:400px;
     margin:15px;
     margin-left: 120px;
     border:2px solid rgb(20, 47, 186);

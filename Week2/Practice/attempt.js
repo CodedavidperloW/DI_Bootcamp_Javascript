@@ -7,7 +7,6 @@ const globalAddress=`I live in ${addressNumber} ${addressStreet} in ${country}`;
 console.log(globalAddress);
 
 
-
 let birthYear=1984;
 let futureYear=2027;
 const financiallyFree= `We will be financially free when I am ${futureYear - birthYear} in ${futureYear}`;
