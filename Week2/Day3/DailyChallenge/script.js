@@ -19,6 +19,10 @@
 //                     if (myString[5] < 6) {
 //                         console.log('*'.repeat(6));
 //                     }}}}}}
+
+
+//<!----XP GOLD
+
 const myString =[1,2,3,4,5,6];
 console.log(myString);
 for(item of myString){
@@ -26,3 +30,12 @@ for(item of myString){
         console.log('*'.repeat(item));
     }
 }
+
+const numbers = [5,0,9,1,7,4,2,6,3,8];
+var myArrToString= numbers.toString();
+console.log(myArrToString);
+let myNewArrToString = numbers.join('+');
+console.log(myNewArrToString);
+
+
+
