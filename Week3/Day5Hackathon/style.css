@@ -6,8 +6,68 @@
 body,
 html {
     margin: 0;
-    padding: 0
+    padding: 0;
+}
+
+body{
+    background-image:url(Sky.jpg);
+    /*opacity: .8;*/
+}
+
+.heading{
+        font-family: 'Oswald', sans-serif;
+        font-size: 48px;
+        letter-spacing: 1px;
+        text-align: center;
+        text-shadow:2px 2px 4px rgb(217, 217, 27);
+        background-color: rgb(190, 31, 102, .5);
+        border-radius: 20px;
+        width:600px;
+        margin-left: 450px;}
+
+section{
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    
+  }
+
+.container, .connames{
+    display:flex;
+    flex-wrap:wrap;
+    border:2px solid black;
+    width:50%;
+}
+
+  img, .textBoxes{
+    width: 165px;
+    height: 165px;
+    margin:2px;
+    border: 3px solid lightgreen;
+    transition: all 1s;
+    box-shadow: 2px 2px;
+  }
+
+  img:hover, .textBoxes:hover{
+    transform: scale(2.1)
+  }
+
+.textBoxes{
+    background-color: rgb(216, 216, 172);
+    font-weight: bolder;
+    text-align: center;
+    padding:40px;
+
 }
 
 
-.heading{font-family: 'Oswald', sans-serif;}
+
+
+  /*.textBoxes{
+    border: 3px solid lightgreen;
+  }
+
+ /* .textBoxes:hover{
+    transform:scale(1.1);
+  }
+  
