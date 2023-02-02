@@ -24,7 +24,39 @@ body{
         background-color: rgb(190, 31, 102, .5);
         border-radius: 20px;
         width:650px;
-        margin-left: 450px;}
+        margin-left: 420px;}
+
+.titlenames , .titleimages{
+    position:absolute;
+    font-family: 'Oswald', sans-serif;
+    font-size: 36px;
+    color:white;
+    background-color: rgb(128, 128, 128, 0.3);
+        }
+
+.titlenames{
+margin-left: 1050px;
+margin-top: -10px;
+}
+
+.titleimages{
+margin-left: 300px;
+margin-top:-10px;
+}
+
+@keyframes titles {
+    from {background-color: rgb(128, 128, 128, 0.3);}
+    to {background-color:rgb(255, 222, 65,0.8);}}
+    
+.titlenames , .titleimages{
+    background-color: rgb(128, 128, 128, 0.3);
+    font-family: 'Oswald', sans-serif;
+    border-radius: 36px;
+    padding:10px;
+    animation-name: titles;
+    animation-duration: 18s;
+}
+
 
 section{
     display: flex;
@@ -34,9 +66,9 @@ section{
   }
 
 .container, .connames{
+    margin-top: 60px;
     display:flex;
     flex-wrap:wrap;
-    border:2px solid black;
     justify-items: center;
     width:45%;
     margin-left: 30px;
