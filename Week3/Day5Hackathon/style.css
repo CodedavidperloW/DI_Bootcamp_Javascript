@@ -23,7 +23,7 @@ body{
         text-shadow:2px 2px 4px rgb(217, 217, 27);
         background-color: rgb(190, 31, 102, .5);
         border-radius: 20px;
-        width:650px;
+        width:680px;
         margin-left: 420px;}
 
 .titlenames , .titleimages{
@@ -35,18 +35,18 @@ body{
         }
 
 .titlenames{
-margin-left: 1050px;
-margin-top: -10px;
+margin-left: 1110px;
+margin-top: -46px;
 }
 
 .titleimages{
 margin-left: 300px;
-margin-top:-10px;
+margin-top:-46px;
 }
 
 @keyframes titles {
     from {background-color: rgb(128, 128, 128, 0.3);}
-    to {background-color:rgb(255, 222, 65,0.8);}}
+    to {background-color:rgb(255, 222, 65);}}
     
 .titlenames , .titleimages{
     background-color: rgb(128, 128, 128, 0.3);
@@ -54,7 +54,7 @@ margin-top:-10px;
     border-radius: 36px;
     padding:10px;
     animation-name: titles;
-    animation-duration: 18s;
+    animation-duration: 60s;
 }
 
 
@@ -62,6 +62,7 @@ section{
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
+    margin-top: -38px;
     
   }
 
