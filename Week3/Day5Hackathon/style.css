@@ -23,8 +23,9 @@ body{
         text-shadow:2px 2px 4px rgb(217, 217, 27);
         background-color: rgb(190, 31, 102, .5);
         border-radius: 20px;
-        width:680px;
-        margin-left: 420px;}
+        width:500px;
+        margin-left: 450px;
+      margin-top: 5px;}
 
 .titlenames , .titleimages{
     position:absolute;
@@ -35,12 +36,12 @@ body{
         }
 
 .titlenames{
-margin-left: 1110px;
+margin-left: 980px;
 margin-top: -46px;
 }
 
 .titleimages{
-margin-left: 300px;
+margin-left: 310px;
 margin-top:-46px;
 }
 
@@ -52,9 +53,9 @@ margin-top:-46px;
     background-color: rgb(128, 128, 128, 0.3);
     font-family: 'Oswald', sans-serif;
     border-radius: 36px;
-    padding:10px;
+    padding:6px;
     animation-name: titles;
-    animation-duration: 60s;
+    animation-duration: 20s;
 }
 
 
@@ -63,6 +64,7 @@ section{
     flex-wrap:wrap;
     justify-content: center;
     margin-top: -38px;
+    margin-left: 30px;
     
   }
 
@@ -70,11 +72,7 @@ section{
     margin-top: 60px;
     display:flex;
     flex-wrap:wrap;
-    justify-items: center;
-    width:45%;
-    margin-left: 30px;
-    
-    
+    width:50%;
 }
 
   img, .textBoxes{
@@ -84,10 +82,11 @@ section{
     border: 3px solid lightgreen;
     transition: all 1s;
     box-shadow: 3px 3px;
+   
   }
 
   img:hover, .textBoxes:hover{
-    transform: scale(2.1)
+    transform: scale(1.1)
   }
 
 .textBoxes{
@@ -98,7 +97,6 @@ section{
     font-size: 22px;
     letter-spacing: 1px;
     padding:26px;
-    
 
 }
 
