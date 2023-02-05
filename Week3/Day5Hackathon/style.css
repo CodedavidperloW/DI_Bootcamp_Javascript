@@ -1,34 +1,38 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-
 
 body,
 html {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
-body{
-    background-image:url(Sky.jpg);
-    /*opacity: .8;*/
+body {
+  background-image: url(./images/Sky.jpg);
+
 }
 
-.heading{
-        font-family: 'Oswald', sans-serif;
-        font-size: 48px;
-        color: rgb(49, 238, 49);
-        letter-spacing: 1px;
-        text-align: center;
-        text-shadow:2px 2px 4px rgb(217, 217, 27);
-        background-color: rgb(190, 31, 102, .5);
-        border-radius: 20px;
-        width:500px;
-        margin-left: 450px;
-      margin-top: 5px;}
+.heading {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
+  color: rgb(49, 238, 49);
+  letter-spacing: 1px;
+  text-align: center;
+  text-shadow: 2px 2px 4px rgb(37, 37, 10);
+  background-color: rgb(190, 31, 102, .5);
+  box-shadow:  2px 4px 5px 7px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 500px;
+  margin-left: 515px;
+  margin-top: 5px;
+}
 
+/*
 .titlenames , .titleimages{
     position:absolute;
+    margin-top: -50px;
     font-family: 'Oswald', sans-serif;
     font-size: 36px;
     color:white;
@@ -37,12 +41,12 @@ body{
 
 .titlenames{
 margin-left: 980px;
-margin-top: -46px;
+
 }
 
 .titleimages{
-margin-left: 310px;
-margin-top:-46px;
+margin-left: 410px;
+
 }
 
 @keyframes titles {
@@ -57,40 +61,64 @@ margin-top:-46px;
     animation-name: titles;
     animation-duration: 20s;
 }
+*/
 
+.container {
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin-left: 110px;
 
-section{
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    margin-top: -38px;
-    margin-left: 30px;
-    
-  }
-
-.container, .connames{
-    margin-top: 60px;
-    display:flex;
-    flex-wrap:wrap;
-    width:50%;
 }
 
-  img, .textBoxes{
-    width: 145px;
-    height: 145px;
-    margin:7px;
-    border: 3px solid lightgreen;
-    transition: all 1s;
-    box-shadow: 3px 3px;
-   
-  }
+.cards {
+  margin-bottom: 160px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 10px;
+}
 
-  img:hover, .textBoxes:hover{
-    transform: scale(1.1)
-  }
+.card {
+  height: 165px;
+  width: 165px;
+  background-color: rgb(247, 247, 157);;
+  border-radius: 10px;
+  border: 4px solid bisque;
+  box-shadow: 5px 10px 18px;
 
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.card:hover {
+  transform: scale(1.03)
+}
+
+.card img {
+  display: grid;
+  place-items: center;
+  width: 155px;
+  height: 155px;
+  margin-left: 5px;
+  margin-top: 5px;
+  border-radius: 10px;
+  transition: 0.3s all ease;
+  opacity: 0;
+}
+
+.card p {
+  text-align: center;
+  padding: 36px;
+  font-family: 'Oswald', sans-serif;
+  font-weight: bolder;
+  font-size: 22px;
+  letter-spacing: 0.3px;
+  opacity: 0;
+}
+
+/*
 .textBoxes{
-    background-color: rgb(216, 216, 172);
+    background-color: 
     font-family: 'Oswald', sans-serif;
     font-weight: bolder;
     text-align: center;
