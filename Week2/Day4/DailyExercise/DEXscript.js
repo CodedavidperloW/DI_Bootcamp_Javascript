@@ -1,51 +1,158 @@
+question =prompt("Please add words seperated by commas")
+let answer= question;
 
-const question = prompt("Please write a few words seperated by commas")
-const answer = question
-theArray= answer.split(",")
+let theArray= answer.split(",") //this created the array and seperated the words by the commas
 
-theArray.forEach(log)
-function log(word){
+theArray.forEach(log)           //this is applying the forEach method using the fuction log to console log each word from the prompt 
+
+function log(word){             // this is function log that takes  the argument word, in this case the elements of the array on line 4.
     console.log(word)
 }
 
-const lengthForBorder=findTheBigWord();
-function findTheBigWord(){
-    let biggestWordEquals = 0
-    for(let i=0;i<theArray.length;i++){
-        let individualWord = theArray[i].length;
-        if(individualWord>biggestWordEquals){
-            biggestWordEquals=individualWord;
-        }//console.log(biggestWordEquals);
+const varForLongestWord = findLongestWord()
+function findLongestWord(){                     //this function finds the longest word by looping the array. As it loops the highest word replaces 'longestWord'
+    let longestWord= 0
+    for(let i=0; i<theArray.length;i++){
+    let currentIndexWord= theArray[i].length;    
+        if(currentIndexWord>longestWord){
+         longestWord=currentIndexWord;
+            //console.log(longestWord);
+            return longestWord;
+        } 
     }
-    return biggestWordEquals;
 }
 
-// borderOfStars()
-function borderOfStars(){
-    let topBottomStars;
-    for(let i=0;i<lengthForBorder;i++){
-    const star="*";
-    topBottomStars=star.repeat(lengthForBorder+2);
-}
-console.log(topBottomStars);
-    // return topBottomStars;
-}
-
-function displayWordsWithBorder(){
-    for(let i=0;i<theArray.length;i++){
-    let eachWord=theArray[i];
-    const numberOfSpaceToAdd = lengthForBorder-eachWord.length
-    const emptySpaces = " ".repeat(numberOfSpaceToAdd);
-    console.log("*" + eachWord + emptySpaces + "*")
-}
+const topAndBottomBorder =toMaketheTopandBottomBorderofStars();
+toMaketheTopandBottomBorderofStars();                           //! Here I learned again that I needed to use the 
+function toMaketheTopandBottomBorderofStars(){                  //Variable of the function form line 12. My
+    let TopBottomBorder                                         //mistake before was that I was using the variable
+    for(let i=0;i<varForLongestWord;i++){                       //on line 20 longestword
+        TopBottomBorder = "*".repeat(varForLongestWord +4);     //SUMMARY: Don't use the return variable, use the
+            console.log(TopBottomBorder);
+         return TopBottomBorder                                                      //Variable of the function
+    }
 }
 
-theFinalFrame();
-function theFinalFrame(){
-    borderOfStars();
-    displayWordsWithBorder();
-    borderOfStars();
+
+
+//sideBorders();
+function sideBorders(){
+for (let i=0;i<theArray.length;i++){
+    let currentWord = theArray[i]
+    let emptySpaces = varForLongestWord-currentWord.length;
+    let spacesToAdd =" ".repeat(emptySpaces)
+    console.log("* " + currentWord +spacesToAdd+" *")
 }
+}
+
+completeFunction();
+function completeFunction(){
+    findLongestWord();
+    toMaketheTopandBottomBorderofStars();
+    sideBorders();
+    toMaketheTopandBottomBorderofStars();
+}
+
+
+    
+                                                              
+
+
+
+
+//Now make the function for the words
+                                                                //To include a star on both left and 
+                                                                //Right side
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// const question = prompt("Please write a few words seperated by commas")
+// const answer = question   //Here I learned that you can save variables in other variables to munipulate them
+
+// theArray= answer.split(",") // Here I learned how to change a string and transform it into an array.
+
+// theArray.forEach(log)   //Here I challenged myself to use the method .forEach with a parameter, which is a function see line 9.
+//                         // The purpose of of using the forEach is to make something happen for each element in an array.
+//                         //the variable: theArray is an array.
+//                         //.forEach(log) is console.logging each element of the array.
+
+// function log(word){     //This function that has an argument is being used to console.log each word
+//     console.log(word)
+// }
+
+
+// const lengthForBorder=findTheBigWord();
+// function findTheBigWord(){                          //The next step is to make the border frame of the box.
+//     let biggestWordEquals = 0                       //To do this, a function is needed to determine the longest word in the array.
+//     for(let i=0;i<theArray.length;i++){             //Once we know how long the biggest element is, then we can use the return value
+//         let individualWord = theArray[i].length;    //In another function to make the star top and bottom frame.
+//         if(individualWord>biggestWordEquals){       //We started to do this by creating the function biggestWordEquals and inside made a 
+//             biggestWordEquals=individualWord;       //variable called biggestWordEquals and set the value at zero
+//         }//console.log(biggestWordEquals);          //then we made a 'for' loop for 'theArray.length', then we set a new variable for
+//     }                                               //the individual element of the array to apply the if condition: individualWord
+//     return biggestWordEquals;                       //While we apply the if condition we are asking if the individualWord is bigger than
+// }                                                   //biggestWordEquals. As the loop is run, when the index is higher, it replaces biggestWordEquals.
+//                                                     //This function provides us with the largest word in the array, and returns its value
+//                                                     //After being saved as a variable lengthForBorder.
+
+// // borderOfStars()
+// function borderOfStars(){                               //Now that we have the longest word returning through our previous function
+//     let topBottomStars;                                 //We can loop that specific amount of characters that we received from lines 21-23
+//     for(let i=0;i<lengthForBorder;i++){                 //In this function we have a "for" loop and it's purpose is to manipulate the length of the 
+//     const star="*";                                     //largest words characters. 
+//     topBottomStars=star.repeat(lengthForBorder+2);      //We have a variable called star, representing "*";
+// }                                                       //Next we made a new variable called topBottomStars whose purpose is to create
+// console.log(topBottomStars);                            //the top and bottom frame of stars. We use the star variable and attach to it the
+//     // return topBottomStars;                           //repeat method. The parenthesis attached allows for the parameter to be applied. In this case
+// }                                                       //the parameter is the (count) of how many times we want it applied. In this function, the star is being
+//                                                         //repeated for the span of the longest word "lengthForBorder" with two extra stars.
+//                                                         //So this function allows us to console.log(topBottomStars) which provides a row of stars the length
+//                                                         //equal to our longest word "lengthForBorder".
+
+
+// function displayWordsWithBorder(){                                      //This function will be used to create both side borders on both sides of the words
+//     for(let i=0;i<theArray.length;i++){                                 //Here a for loop is being used to loop the length of the array.
+//     let eachWord=theArray[i];                                           //A variable "eachWord" takes the individual indes of each element within the array
+//     const numberOfSpaceToAdd = lengthForBorder-eachWord.length          //Now a solution is made to make up for the additional spaces left by smaller words
+//     const emptySpaces = " ".repeat(numberOfSpaceToAdd);                 //The const variable numberOfSpaceToAdd is equal to the numeric value of the longest
+//     console.log("*" + eachWord + emptySpaces + "*")                     //word minus the character length of the specific element.
+// }                                                                       //Now that we have a variable for the amount of space that is left for each element
+//                                                                         //we can create a variable for the empty spaces.
+//                                                                         //We use the variable emptySpaces= " ".repeat(numberOfSpaceToAdd)
+//                                                                         //This creates the space needed to form a straight line on the right side of the border
+//                                                                         //Now the console log creates the side borders. 
+//                                                                         //* + the word within the specific index + the amount of spaces to the right equal to the longest word and a *. 
+// }
+
+// theFinalFrame();                                                        //This final function, brings them all together to form our box.
+// function theFinalFrame(){
+//     borderOfStars();
+//     displayWordsWithBorder();
+//     borderOfStars();
+// }
 
 
 
