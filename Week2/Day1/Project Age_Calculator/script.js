@@ -1,4 +1,4 @@
-age();
+
 function age(){
 
     var d1 = document.getElementById("date").value;
@@ -24,5 +24,5 @@ function age(){
     var m = m2 - m1;  //   current month plus one (which is to include that month) - month selected 
     var y = y2 -y1;     // current year minus year that was chosen
 
-    document.getElementById('age').innerHTML = `Your age is ${y} years ${m} and ${d} days`;
+    document.getElementById('age').innerHTML = `Your age is ${y} years ${m} months and ${d} days`;
 }
