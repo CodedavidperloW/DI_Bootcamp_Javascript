@@ -21,7 +21,7 @@ function preventReload(e){
         return
     }
 
-    let writeStory = `${noun} ${adjective} ${person} ${verb} ${place}`
+    let writeStory = `So like one time ${noun} was very ${adjective} and was talking to  ${person} when all of a sudden they saw a child ${verb} ${place}`
     
 
     const story= document.getElementById("story")
